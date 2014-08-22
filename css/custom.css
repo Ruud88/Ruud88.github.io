@@ -1,0 +1,70 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+ul.nav, .jumbotron h1  {
+	font-family: 'Arvo', courier, serif;
+	font-weight: normal;
+
+
+}
+} 
+
+ul.nav {
+	font-size: 18px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+#maat .jumbotron {
+	text-align: center;
+	background-image: url('../images/maat back.jpg');
+	color: white;
+	}
+
+#kcv .jumbotron {
+	text-align: center;
+	background-image: url('../images/kcv back.jpg');
+	color: white;
+	}
+
+#filo .jumbotron {
+	text-align: center;
+	background-image: url('../images/filo back.jpg');
+	color: black;
+	}
+
+#ges .jumbotron {
+	text-align: center;
+	background-image: url('../images/gs back.jpg');
+	color: black;
+	}
+
+#home .jumbotron {
+	text-align: center;
+	background-image: url('../images/gs back.jpg');
+	color: white;
+	}
+
+.jumbotron h1 {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+#home .jumbotron h2 {
+	margin-top: 160px;
+	margin-bottom: 60px;
+	color: white;
+}
+
+.jumbotron p {
+	margin-bottom: 30px;
+	font-weight: 100;
+	padding: 0 50px;
+}
+
+.btn-lg {
+	font-size: 36px;
+}
+
