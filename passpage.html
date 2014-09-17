@@ -1,4 +1,4 @@
-
+    
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,28 +31,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-<SCRIPT>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Voer wachtwoord in',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "geschiedenisvanmeneerklomp") {
-window.open('gs.html');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</SCRIPT>
-
   </head>
 
   <body id="ges">
@@ -87,39 +65,31 @@ return " ";
       </div>
     </div>
 
-      
+    <SCRIPT>
+      function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Please Enter Your Password',' ');
+      while (testV < 3) {
+      if (!pass1)
+      history.go(-1);
+      if (pass1.toLowerCase() == "qwertyuiop") {
+      alert('You Got it Right!');
+      window.open('target.html');
+      break;
+      }
+      testV+=1;
+      var pass1 =
+      prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+      }
+      if (pass1.toLowerCase()!="password" & testV ==3)
+      history.go(-1);
+      return " ";
+      }
+      </SCRIPT>
+      <FORM>
+      <input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
 
-    <div class="container" style= "margin-top: 40px;">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Geschiedenis</h2>
-          <a href="gs.html"><img src="images/ges header.jpg" onMouseOver="this.src='images/ges header2.jpg'" onMouseOut="this.src='images/ges header.jpg'" value="Enter Protected Area" onClick="passWord()" class="img-responsive" alt="Responsive image" style="padding-bottom: 20px;"></a>
-          
-        </div>
-        <div class="col-md-3">
-          <h2>Maatschappijleer</h2>
-          <a href="maat.html"><img src="images/maat header.jpg" onMouseOver="this.src='images/maat header2.jpg'" onMouseOut="this.src='images/maat header.jpg'" class="img-responsive" alt="Responsive image" style="padding-bottom: 20px;"></a>
-          
-       </div>
-        <div class="col-md-3">
-          <h2>Filosofie</h2>
-          <a href="filo.html"><img src="images/filo header.jpg" onMouseOver="this.src='images/filo header2.jpg'" onMouseOut="this.src='images/filo header.jpg'" class="img-responsive" alt="Responsive image" style="padding-bottom: 20px;"></a>
-          
-        </div>
-        <div class="col-md-3">
-          <h2>KCV</h2>
-          <a href="kcv.html"><img src="images/kcv header.jpg" onMouseOver="this.src='images/kcv header2.jpg'" onMouseOut="this.src='images/kcv header.jpg'" class="img-responsive" alt="Responsive image" style="padding-bottom: 20px;"></a>
-          
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Klomp 2014</p>
-      </footer>
-    </div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
